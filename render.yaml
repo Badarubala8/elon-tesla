@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: elon-tesla-dealership
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        sync: false
+      - key: BTCPAY_URL
+        sync: false
+      - key: BTCPAY_STORE_ID
+        sync: false
+      - key: BTCPAY_API_KEY
+        sync: false
+      - key: BTCPAY_WEBHOOK_SECRET
+        sync: false
+      - key: BTC_RECEIVING_ADDRESS
+        sync: false
