@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Independent electric vehicle dealership. Browse vehicles and request delivery.">
+  <title>Elon Tesla | Independent EV Dealership</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#">ELON <span>TESLA</span></a>
+    <nav><a href="#inventory">Inventory</a><a href="#checkout">Checkout</a><a href="#tracking">Track order</a></nav>
+    <a class="cart-link" href="#cart">Cart <span id="cart-count">0</span></a>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">INDEPENDENT ELECTRIC VEHICLE DEALERSHIP</p>
+        <h1>Move forward.<br><em>Electrically.</em></h1>
+        <p>Explore our electric vehicle selection and request a delivery quote.</p>
+        <a class="primary-link" href="#inventory">Explore vehicles</a>
+      </div>
+      <div class="hero-art" role="img" aria-label="Electric vehicle on a modern road"></div>
+    </section>
+    <section class="notice">
+      <strong>Independent dealership notice</strong>
+      <p>Elon Tesla is an independent dealership concept and is not affiliated with, endorsed by, or an authorized representative of Tesla, Inc. Vehicle availability, condition, seller authorization, taxes, and delivery must be independently confirmed before payment.</p>
+    </section>
+    <section id="inventory" class="section">
+      <div class="section-heading"><div><p class="eyebrow">THE COLLECTION</p><h2>Explore the lineup</h2></div><p class="muted">Illustrative USD prices · Not verified offers</p></div>
+      <div id="cars" class="car-grid"><article class="car-card"><div class="car-image placeholder"></div><div class="car-info"><h3>Loading inventory…</h3></div></article></div>
+    </section>
+    <section id="cart" class="section split">
+      <div><p class="eyebrow">YOUR SELECTION</p><h2>Shopping cart</h2><p class="muted">Select one vehicle model per order. Quantities are limited to five.</p></div>
+      <div class="panel"><div id="cart-items"><p class="muted">Your cart is empty.</p></div><div class="total-line"><span>Estimated total</span><strong id="cart-total">$0</strong></div></div>
+    </section>
+    <section id="checkout" class="section">
+      <div class="section-heading"><div><p class="eyebrow">SECURE ORDER REQUEST</p><h2>Delivery & checkout</h2></div><p class="muted">Bitcoin invoice is created by BTCPay Server.</p></div>
+      <div class="checkout-grid">
+        <form id="checkout-form" class="panel form-grid">
+          <h3 class="full">Contact information</h3>
+          <label class="full">Full name<input name="name" autocomplete="name" maxlength="120" required></label>
+          <label>Email address<input name="email" type="email" autocomplete="email" required></label>
+          <label>Phone number<input name="phone" type="tel" autocomplete="tel" required></label>
+          <h3 class="full">Delivery address</h3>
+          <label class="full">Country<select name="country" id="country" autocomplete="country-name" required><option value="">Choose country</option><option>United States</option><option>Canada</option><option>United Kingdom</option><option>Nigeria</option><option>Ghana</option><option>South Africa</option><option>Other</option></select></label>
+          <label>State / province<input name="state" autocomplete="address-level1" required></label>
+          <label>City<input name="city" autocomplete="address-level2" required></label>
+          <label class="full">Street address<input name="street" autocomplete="street-address" required></label>
+          <label>ZIP / postal code<input name="postalCode" autocomplete="postal-code" required></label>
+          <p class="muted full small">Delivery availability and cost are not yet calculated. Do not pay until the seller confirms the vehicle, delivery route, taxes, and final amount in writing.</p>
+          <button class="primary-button full" type="submit">Create Bitcoin invoice</button>
+          <p id="checkout-message" class="full status" role="status"></p>
+        </form>
+        <aside class="panel payment-aside">
+          <p class="eyebrow">BITCOIN CHECKOUT</p><h3>Pay securely</h3>
+          <p>Each order receives its own BTCPay invoice. The invoice displays the amount, exchange rate, QR code, and payment instructions.</p>
+          <ul><li>Never share your wallet recovery phrase.</li><li>Only pay an invoice after verifying the seller and vehicle.</li><li>Payment status is updated from a signed processor webhook.</li></ul>
+          <p class="small muted">A wallet address by itself does not confirm an order or guarantee delivery.</p>
+        </aside>
+      </div>
+    </section>
+    <section id="tracking" class="section">
+      <p class="eyebrow">ORDER STATUS</p><h2>Track your order</h2>
+      <div class="panel tracking-panel">
+        <label>Order number<input id="tracking-id" placeholder="Paste your order number"></label>
+        <label>Private tracking token<input id="tracking-token" placeholder="Paste the private token shown after checkout"></label>
+        <button id="track-button" class="secondary-button">Check order status</button>
+        <p id="tracking-result" class="status" role="status"></p>
+      </div>
+    </section>
+  </main>
+  <footer><strong>ELON TESLA</strong><p>Independent dealership concept · Not affiliated with Tesla, Inc.</p><p class="small">Prices shown are illustrative. No vehicle is represented as available or reserved until independently verified by the seller.</p></footer>
+</body>
+</html>
