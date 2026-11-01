@@ -1,77 +1,31 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Independent electric vehicle dealership. Browse vehicles and request delivery.">
-  <title>Elon Tesla | Independent EV Dealership</title>
-  <link rel="stylesheet" href="/styles.css">
-  <script src="/app.js" defer></script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#08090b">
+<meta name="description" content="Explore the Tesla electric vehicle range through an independent dealership concept.">
+<title>ELON TESLA — Electric, Reimagined</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css"><script src="/app.js" defer></script>
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="#">ELON <span>TESLA</span></a>
-    <nav><a href="#inventory">Inventory</a><a href="#checkout">Checkout</a><a href="#tracking">Track order</a></nav>
-    <a class="cart-link" href="#cart">Cart <span id="cart-count">0</span></a>
-  </header>
-  <main>
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">INDEPENDENT ELECTRIC VEHICLE DEALERSHIP</p>
-        <h1>Move forward.<br><em>Electrically.</em></h1>
-        <p>Explore our electric vehicle selection and request a delivery quote.</p>
-        <a class="primary-link" href="#inventory">Explore vehicles</a>
-      </div>
-      <div class="hero-art" role="img" aria-label="Electric vehicle on a modern road"></div>
-    </section>
-    <section class="notice">
-      <strong>Independent dealership notice</strong>
-      <p>Elon Tesla is an independent dealership concept and is not affiliated with, endorsed by, or an authorized representative of Tesla, Inc. Vehicle availability, condition, seller authorization, taxes, and delivery must be independently confirmed before payment.</p>
-    </section>
-    <section id="inventory" class="section">
-      <div class="section-heading"><div><p class="eyebrow">THE COLLECTION</p><h2>Explore the lineup</h2></div><p class="muted">Illustrative USD prices · Not verified offers</p></div>
-      <div id="cars" class="car-grid"><article class="car-card"><div class="car-image placeholder"></div><div class="car-info"><h3>Loading inventory…</h3></div></article></div>
-    </section>
-    <section id="cart" class="section split">
-      <div><p class="eyebrow">YOUR SELECTION</p><h2>Shopping cart</h2><p class="muted">Select one vehicle model per order. Quantities are limited to five.</p></div>
-      <div class="panel"><div id="cart-items"><p class="muted">Your cart is empty.</p></div><div class="total-line"><span>Estimated total</span><strong id="cart-total">$0</strong></div></div>
-    </section>
-    <section id="checkout" class="section">
-      <div class="section-heading"><div><p class="eyebrow">SECURE ORDER REQUEST</p><h2>Delivery & checkout</h2></div><p class="muted">Bitcoin invoice is created by BTCPay Server.</p></div>
-      <div class="checkout-grid">
-        <form id="checkout-form" class="panel form-grid">
-          <h3 class="full">Contact information</h3>
-          <label class="full">Full name<input name="name" autocomplete="name" maxlength="120" required></label>
-          <label>Email address<input name="email" type="email" autocomplete="email" required></label>
-          <label>Phone number<input name="phone" type="tel" autocomplete="tel" required></label>
-          <h3 class="full">Delivery address</h3>
-          <label class="full">Country<select name="country" id="country" autocomplete="country-name" required><option value="">Choose country</option><option>United States</option><option>Canada</option><option>United Kingdom</option><option>Nigeria</option><option>Ghana</option><option>South Africa</option><option>Other</option></select></label>
-          <label>State / province<input name="state" autocomplete="address-level1" required></label>
-          <label>City<input name="city" autocomplete="address-level2" required></label>
-          <label class="full">Street address<input name="street" autocomplete="street-address" required></label>
-          <label>ZIP / postal code<input name="postalCode" autocomplete="postal-code" required></label>
-          <p class="muted full small">Delivery availability and cost are not yet calculated. Do not pay until the seller confirms the vehicle, delivery route, taxes, and final amount in writing.</p>
-          <button class="primary-button full" type="submit">Create Bitcoin invoice</button>
-          <p id="checkout-message" class="full status" role="status"></p>
-        </form>
-        <aside class="panel payment-aside">
-          <p class="eyebrow">BITCOIN CHECKOUT</p><h3>Pay securely</h3>
-          <p>Each order receives its own BTCPay invoice. The invoice displays the amount, exchange rate, QR code, and payment instructions.</p>
-          <ul><li>Never share your wallet recovery phrase.</li><li>Only pay an invoice after verifying the seller and vehicle.</li><li>Payment status is updated from a signed processor webhook.</li></ul>
-          <p class="small muted">A wallet address by itself does not confirm an order or guarantee delivery.</p>
-        </aside>
-      </div>
-    </section>
-    <section id="tracking" class="section">
-      <p class="eyebrow">ORDER STATUS</p><h2>Track your order</h2>
-      <div class="panel tracking-panel">
-        <label>Order number<input id="tracking-id" placeholder="Paste your order number"></label>
-        <label>Private tracking token<input id="tracking-token" placeholder="Paste the private token shown after checkout"></label>
-        <button id="track-button" class="secondary-button">Check order status</button>
-        <p id="tracking-result" class="status" role="status"></p>
-      </div>
-    </section>
-  </main>
-  <footer><strong>ELON TESLA</strong><p>Independent dealership concept · Not affiliated with Tesla, Inc.</p><p class="small">Prices shown are illustrative. No vehicle is represented as available or reserved until independently verified by the seller.</p></footer>
-</body>
-</html>
+<header class="topbar"><a class="brand" href="#"><span class="brand-mark">E</span><span>ELON <b>TESLA</b></span></a>
+<nav><a href="#lineup">Lineup</a><a href="#ownership">Ownership</a><a href="#checkout">Order enquiry</a><a href="#tracking">Track</a></nav>
+<a class="cart-link" href="#cart">Cart <span id="cart-count">0</span></a></header>
+<main>
+<section class="hero"><div class="hero-copy"><p class="eyebrow">THE ELECTRIC COLLECTION · 2026</p><h1>Designed for<br><span>what’s next.</span></h1><p class="hero-sub">A considered look at the Tesla electric range. Discover the models, compare trims and request a vehicle enquiry.</p><a class="cta" href="#lineup">Explore the collection <span>↗</span></a><div class="hero-foot"><span>01 / ELECTRIC MOBILITY</span><span>USA · USD PRICING</span></div></div>
+<div class="hero-visual"><img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=1600&q=90" alt="Modern electric sedan on the road"><div class="visual-tag"><span class="pulse"></span> ELECTRIC BY DESIGN</div></div></section>
+<section class="trust-strip"><div><strong>2026</strong><span>Model year pricing</span></div><div><strong>03</strong><span>Current model families</span></div><div><strong>USD</strong><span>United States market</span></div><div><strong>01</strong><span>Independent dealership concept</span></div></section>
+<section class="section lineup" id="lineup"><div class="section-top"><div><p class="eyebrow">THE COLLECTION</p><h2>Find your <i>electric.</i></h2></div><p class="section-note">Current U.S. manufacturer starting prices, checked 1 November 2026. Select a trim to see its listed vehicle price.</p></div>
+<div id="cars" class="car-grid"><div class="loading-card">Loading the collection…</div></div>
+<div class="pricing-note">Prices are U.S. manufacturer-listed vehicle prices before destination, order fees, taxes, options and other charges. They are not dealer quotes or verified inventory. Prices and availability can change; confirm directly with Tesla before purchase.</div>
+</section>
+<section class="inventory-note"><div><p class="eyebrow">SPECIALIST ENQUIRIES</p><h2>Looking for a<br><i>Model S or Model X?</i></h2><p>New Model S and Model X ordering is not currently shown in Tesla’s active U.S. configurator. Ask about pre-owned or remaining inventory; condition, mileage and price must be confirmed vehicle by vehicle.</p></div><div class="inventory-models"><div><b>MODEL S</b><span>Pre-owned / remaining stock</span></div><div><b>MODEL X</b><span>Pre-owned / remaining stock</span></div></div></section>
+<section class="section ownership" id="ownership"><div class="section-top"><div><p class="eyebrow">THE EXPERIENCE</p><h2>Confidence at<br><i>every step.</i></h2></div></div><div class="feature-grid"><article><span>01</span><h3>Compare clearly</h3><p>Explore trim-level starting prices and review the final vehicle specification before making a decision.</p></article><article><span>02</span><h3>Confirm the details</h3><p>Vehicle identity, condition, seller authority, taxes and delivery arrangements must be independently verified.</p></article><article><span>03</span><h3>Track your enquiry</h3><p>Keep your order reference and private tracking token to check the status of a submitted enquiry.</p></article></div></section>
+<section class="section cart-section" id="cart"><div class="section-top"><div><p class="eyebrow">YOUR SHORTLIST</p><h2>Selected <i>vehicle.</i></h2></div><p class="section-note">One trim per order enquiry.</p></div><div class="cart-panel"><div id="cart-items"><p class="empty">Your shortlist is empty. Add a vehicle from the collection above.</p></div><div class="total-line"><span>Estimated vehicle subtotal</span><strong id="cart-total">$0</strong></div></div></section>
+<section class="section checkout-section" id="checkout"><div class="section-top"><div><p class="eyebrow">NEXT STEP</p><h2>Request an <i>enquiry.</i></h2></div><p class="section-note">Submit your contact and delivery details for follow-up. This is not a confirmed purchase.</p></div><div class="checkout-grid"><form id="checkout-form" class="form-panel"><div class="form-heading"><span>01</span><h3>Your details</h3></div><div class="form-grid"><label class="wide">Full name<input name="name" autocomplete="name" maxlength="120" required></label><label>Email address<input name="email" type="email" autocomplete="email" required></label><label>Phone number<input name="phone" type="tel" autocomplete="tel" required></label><div class="form-heading wide"><span>02</span><h3>Delivery location</h3></div><label class="wide">Country<select name="country" autocomplete="country-name" required><option value="">Select country</option><option>United States</option><option>Canada</option><option>United Kingdom</option><option>Nigeria</option><option>Ghana</option><option>South Africa</option><option>Other</option></select></label><label>State / province<input name="state" autocomplete="address-level1" required></label><label>City<input name="city" autocomplete="address-level2" required></label><label class="wide">Street address<input name="street" autocomplete="street-address" required></label><label>ZIP / postal code<input name="postalCode" autocomplete="postal-code" required></label></div><p class="fineprint">Submitting creates an enquiry only when the order service is configured. Do not send payment until the seller, VIN, vehicle condition, final price, taxes and delivery are independently verified in a written agreement.</p><button class="cta submit wide" type="submit">Submit vehicle enquiry <span>↗</span></button><p id="checkout-message" class="status wide" role="status"></p></form>
+<aside class="checkout-aside"><p class="eyebrow">PAYMENT STATUS</p><h3>Payment is not yet enabled.</h3><p>Bitcoin checkout will only be activated after the database, BTCPay Server credentials and signed payment notifications are configured and tested. Never send funds to a wallet address provided in an unverified message.</p><div class="aside-rule"></div><p class="tiny">Independent dealership concept. Not affiliated with, endorsed by, or authorized by Tesla, Inc.</p></aside></div></section>
+<section class="section tracking-section" id="tracking"><p class="eyebrow">ORDER SUPPORT</p><h2>Track an <i>enquiry.</i></h2><div class="tracking-panel"><label>Enquiry reference<input id="tracking-id" placeholder="Enter reference"></label><label>Private tracking token<input id="tracking-token" placeholder="Enter private token"></label><button id="track-button" class="outline-button">Check status ↗</button><p id="tracking-result" class="status" role="status"></p></div></section>
+</main><footer><a class="brand" href="#"><span class="brand-mark">E</span><span>ELON <b>TESLA</b></span></a><p>Independent dealership concept · Not affiliated with Tesla, Inc.</p><p class="tiny">Tesla and vehicle model names are trademarks of Tesla, Inc. Prices are informational U.S. MSRP references, not offers to sell. Verify current details with the manufacturer and the actual seller.</p><div class="footer-bottom"><span>© 2026 ELON TESLA</span><a href="#lineup">BACK TO TOP ↑</a></div></footer>
+</body></html>
